@@ -17,6 +17,14 @@ def section_card(title: str, icon: str = "🔹"):
     box.subheader(f"{icon} {title}")
     return box
 
+st.title("Power BI 簡報說明")
+tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(["首頁", "職涯定位", "選主題", "找資料", "分析視覺化", "上架"])
+with tab1:
+    st.header("首頁：學習地圖")
+    st.image("image/loupe.png",width=30)
+with tab2:
+    st.header("職涯定位")
+    
 
 # ====================================================================
 # 0. 首頁：學習地圖
@@ -453,7 +461,7 @@ def render_apply_interview():
 # ====================================================================
 # 側邊選單與主程式路由
 # ====================================================================
-st.image("image/loupe.png",width=100)
+st.image("image/loupe.png",width=20)
 PAGES = {
     "🏠 首頁 / 學習地圖": render_home,
     "1️⃣ 職涯定位": render_positioning,
